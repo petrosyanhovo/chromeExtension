@@ -1,0 +1,21 @@
+{
+    "name" : "Welcome Domain",
+    "description" : "My first Chrome Extension",
+    "version" : "1.0.0",
+    "manifest_version" : 3,
+    "icons": {
+        "16": "img/img16.png",
+        "48": "img/img48.png",
+        "128": "img/img128.png"
+      },
+    "content_scripts" : [
+        {
+            "matches" : [
+                "https://*.example.com/*"
+            ],
+            "js" : [
+                "app.js"
+            ]
+        }
+    ]
+}
